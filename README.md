@@ -1,5 +1,5 @@
 # MAVLInk_A_Vehicle
-Simulate a vehicle to connect to QGC via MAVLink over UDP, and send/receive the messages.(Tested on Linux)
+On POSIX API, simulate a vehicle to connect to QGC via MAVLink over UDP, and send/receive the messages.(Tested on Linux)
 
 Build
 ====
