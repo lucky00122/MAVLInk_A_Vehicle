@@ -1,33 +1,11 @@
-/*******************************************************************************
- Copyright (C) 2010  Bryan Godbolt godbolt ( a t ) ualberta.ca
- 
- This program is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
- 
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- 
- You should have received a copy of the GNU General Public License
- along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- ****************************************************************************/
 /*
- This program sends some data to qgroundcontrol using the mavlink protocol.  The sent packets
- cause qgroundcontrol to respond with heartbeats.  Any settings or custom commands sent from
- qgroundcontrol are printed by this program along with the heartbeats.
- 
- 
- I compiled this program sucessfully on Ubuntu 10.04 with the following command
- 
- gcc -I ../../pixhawk/mavlink/include -o udp-server udp-server-test.c
- 
- the rt library is needed for the clock_gettime on linux
+ * File name: mavlink_udp.c
+ * Purpose: On POSIX API, simulate a vehicle to connect to QGC via MAVLink over UDP, and send/receive the messages.(Tested on Linux)
+ * Creating Date: 2019.11.27
+ * Author/Charge: Panda Wang (lucky00122@gmail.com)
+ * Note: N/A
  */
-/* These headers are for QNX, but should all be standard on unix/linux */
+
 #include <stdio.h>
 #include <errno.h>
 #include <string.h>

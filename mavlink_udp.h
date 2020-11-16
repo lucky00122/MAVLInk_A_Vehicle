@@ -1,3 +1,10 @@
+/*
+ * File name: mavlink_udp.h
+ * Purpose: On POSIX API, simulate a vehicle to connect to QGC via MAVLink over UDP, and send/receive the messages.(Tested on Linux)
+ * Creating Date: 2019.11.27
+ * Author/Charge: Panda Wang (lucky00122@gmail.com)
+ * Note: N/A
+ */
 //#pragma once
 
 #ifndef MAVLINK_UDP_H
